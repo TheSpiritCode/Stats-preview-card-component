@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap);
+:root {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .accent {
+  color: hsl(277deg, 64%, 61%);
+}
+body .heading {
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+body .card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 325px;
+}
+body .card .card__image {
+  width: 100%;
+  position: relative;
+  max-height: 240px;
+}
+body .card .card__image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .card .card__image .image__overlay {
+  position: absolute;
+  background-color: hsla(277deg, 100%, 30%, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+body .card .card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+body .card .card__body h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+body .card .card__body p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.6rem;
+}
+body .card .card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .card .card__footer .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+body .card .card__footer .stat .stat__number {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+body .card .card__footer .stat .stat__description {
+  text-transform: uppercase;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font: normal 0.7rem "Lexend Deca", sans-serif;
+  letter-spacing: 0.1rem;
+}

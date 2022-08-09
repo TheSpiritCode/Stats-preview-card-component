@@ -9,9 +9,96 @@ body {
   background-color: $very-dark-blue;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  .accent {
+    color: $soft-violet;
+  }
 
+  .heading {
+    font-weight: 700;
+    color: $white;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-desaturated-blue;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 325px;
+
+    .card__image {
+      width: 100%;
+      position: relative;
+      max-height: 240px;
+
+      img {
+        //width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image__overlay {
+        position: absolute;
+        background-color: $soft-violet-opacity;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+
+    }
+
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+
+      h1 {
+        font-size: 1.8rem;
+        margin: 0;
+      }
+
+      p {
+        color: $slightly-transparent-white-main;
+        line-height: 1.6rem;
+      }
+    }
+
+    .card__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .stat__number {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .stat__description {
+          //font-family: $lexend;
+          text-transform: uppercase;
+          color: $slightly-transparent-white-stat;
+          //font-weight: 400;
+          font: normal 0.7rem $lexend;
+          letter-spacing: 0.1rem;
+
+
+        }
+      }
+    }
+
+
+  }
 }
