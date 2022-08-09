@@ -1,0 +1,17 @@
+@import "variables";
+
+:root {
+  font-size: $font-size;
+  font-family: $inter;
+}
+
+body {
+  background-color: $very-dark-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
