@@ -43,10 +43,11 @@ body {
 
       .image__overlay {
         position: absolute;
-        background-color: $soft-violet-opacity;
+        background-color: $soft-violet;
         width: 100%;
         height: 100%;
         top: 0;
+        mix-blend-mode: multiply;
       }
 
     }
