@@ -87,10 +87,8 @@ body {
         }
 
         .stat__description {
-          //font-family: $lexend;
           text-transform: uppercase;
           color: $slightly-transparent-white-stat;
-          //font-weight: 400;
           font: normal 0.7rem $lexend;
           letter-spacing: 0.1rem;
 
@@ -100,5 +98,49 @@ body {
     }
 
 
+  }
+
+  @media (min-width: $desktop) {
+    .card {
+      flex-direction: row-reverse;
+      max-width: 1110px;
+
+      .card__image {
+        width: 50%;
+        max-height: unset;
+      }
+
+      .card__content {
+        margin: 3rem;
+
+        .card__body {
+          text-align: left;
+          align-items: start;
+
+          h1 {
+            font-size: 2.2rem;
+            max-width: 375px;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            max-width: 350px;
+          }
+        }
+
+        .card__footer {
+          flex-direction: row;
+          justify-content: space-between;
+          max-width: 350px;
+          padding: 2rem 2rem 1.5rem;
+
+          .stat {
+            margin-bottom: 0;
+            align-items: start;
+          }
+        }
+      }
+
+    }
   }
 }

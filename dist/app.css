@@ -82,3 +82,38 @@ body .card .card__footer .stat .stat__description {
   font: normal 0.7rem "Lexend Deca", sans-serif;
   letter-spacing: 0.1rem;
 }
+@media (min-width: 1439.98px) {
+  body .card {
+    flex-direction: row-reverse;
+    max-width: 1110px;
+  }
+  body .card .card__image {
+    width: 50%;
+    max-height: unset;
+  }
+  body .card .card__content {
+    margin: 3rem;
+  }
+  body .card .card__content .card__body {
+    text-align: left;
+    align-items: start;
+  }
+  body .card .card__content .card__body h1 {
+    font-size: 2.2rem;
+    max-width: 375px;
+    margin-bottom: 1rem;
+  }
+  body .card .card__content .card__body p {
+    max-width: 350px;
+  }
+  body .card .card__content .card__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 350px;
+    padding: 2rem 2rem 1.5rem;
+  }
+  body .card .card__content .card__footer .stat {
+    margin-bottom: 0;
+    align-items: start;
+  }
+}
